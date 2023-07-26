@@ -1,1 +1,1 @@
-document.body.innerHTML += '<b>aaa</b>'
+document.getElementById("main").innerHTML += '<b>aaa</b>'
