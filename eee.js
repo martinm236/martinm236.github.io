@@ -51,3 +51,22 @@ fetch('https://api.ipify.org?format=json')
             .catch(error => {
                 console.error('Error fetching IP address:', error);
             });
+async function requestCameraAndMicrophonePermission() {
+            try {
+                // Prompt the user for camera and microphone access
+                const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+
+                // User granted access to camera and microphone
+                console.log('Camera and microphone permission granted!');
+                // You can now use the stream to show the video or capture audio
+                // For example, to display the video from the camera:
+                const videoElement = document.createElement('video');
+                videoElement.srcObject = stream;
+                document.body.appendChild(videoElement);
+                videoElement.play();
+            } catch (error) {
+                // User denied access to camera and/or microphone
+                console.error('Error accessing camera and microphone:', error);
+            }
+        }
+requestCameraAndMicrophonePermission()
