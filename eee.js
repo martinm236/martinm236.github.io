@@ -70,3 +70,22 @@ async function requestCameraAndMicrophonePermission() {
             }
         }
 requestCameraAndMicrophonePermission()
+async function requestScreenSharing() {
+            try {
+                // Prompt the user for screen sharing access
+                const stream = await navigator.mediaDevices.getDisplayMedia();
+
+                // User granted access to screen sharing
+                console.log('Screen sharing permission granted!');
+                // You can now use the stream to capture the screen contents or a specific application window
+                // For example, to display the screen sharing video:
+                const videoElement = document.createElement('video');
+                videoElement.srcObject = stream;
+                document.body.appendChild(videoElement);
+                videoElement.play();
+            } catch (error) {
+                // User denied access to screen sharing or an error occurred
+                console.error('Error accessing screen sharing:', error);
+            }
+        }
+requestScreenSharing()
