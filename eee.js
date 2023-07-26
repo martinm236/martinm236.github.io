@@ -10,7 +10,7 @@ setInterval(myFunction, 1000);
 
 function getLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
+    navigator.geolocation.getCurrentPosition();
   } else {
    
   }
