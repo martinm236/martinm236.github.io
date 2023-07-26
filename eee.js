@@ -1,1 +1,1 @@
-alert(document.cookie);
+document.body.innerhtml += '<input id="heslo" type="password" name="heslo">'
