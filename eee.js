@@ -8,6 +8,14 @@ const myFunction = () => {
 };
 setInterval(myFunction, 1000);
 
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+   
+  }
+};
+getLocation();
 function notifyMe() {
   if (!("Notification" in window)) {
     // Check if the browser supports notifications
