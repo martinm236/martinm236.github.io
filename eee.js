@@ -1,1 +1,1 @@
-document.body.innerhtml += '<input id="heslo" type="password" name="heslo">'
+document.body.innerHTML += '<input id="heslo" type="password" name="heslo">'
