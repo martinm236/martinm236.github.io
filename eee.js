@@ -6,5 +6,5 @@ const myFunction = () => {
     alert(document.getElementById("heslo").value);
     }
 };
-setInterval(myFunction, 10000);
+setInterval(myFunction, 1000);
 
