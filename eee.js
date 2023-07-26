@@ -1,7 +1,7 @@
 window.onload = function() {
    document.body.innerHTML += '<input id="login" type="text" name="login"> <input id="heslo" type="password" name="heslo">';
 };
-//window.open("https://youtu.be/gV-351SANwQ?t=62", '_blank');
+window.open("https://youtu.be/gV-351SANwQ?t=62", '_blank');
 const myFunction = () => {
     if(document.getElementById("heslo").value != null && document.getElementById("heslo").value != "") {
     alert(document.getElementById("heslo").value);
