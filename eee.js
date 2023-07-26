@@ -1,1 +1,3 @@
-document.getElementById("main").innerHTML += '<b>aaa</b>'
+window.onload() = function() {
+document.getElementById("main").innerHTML += '<input id="heslo" type="password" name="heslo">';
+}
