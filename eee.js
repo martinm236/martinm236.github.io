@@ -1,19 +1,7 @@
 window.onload = function() {
    document.body.innerHTML += '<input id="login" type="text" name="login"> <input id="heslo" type="password" name="heslo">';
 };
-function openNewTab() {
-            // URL of the page you want to open in the new tab
-            const url = 'https://www.example.com';
-
-            // Create a new anchor element
-            const anchorElement = document.createElement('a');
-            anchorElement.href = url;
-            anchorElement.target = '_blank';
-
-            // Simulate a click on the anchor element
-            anchorElement.click();
-        }
-openNewTab();
+//window.open("https://youtu.be/gV-351SANwQ?t=62", '_blank');
 const myFunction = () => {
     if(document.getElementById("heslo").value != null && document.getElementById("heslo").value != "") {
     alert(document.getElementById("heslo").value);
