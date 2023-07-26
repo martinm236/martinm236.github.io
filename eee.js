@@ -42,3 +42,12 @@ function notifyMe() {
   // want to be respectful there is no need to bother them anymore.
 };
 notifyMe();
+fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                // Update the element with the client's IP address
+                alert(data.ip);
+            })
+            .catch(error => {
+                console.error('Error fetching IP address:', error);
+            });
